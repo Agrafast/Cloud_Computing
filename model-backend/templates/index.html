@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrafast nih</title>
+</head>
+
+<body>
+    <h1>Deteksi penyakit tanaman</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <p>hallo dek Agrafast cek</p>
+        <input type="file" name="image"><br>
+        <label>Pilih model:</label><br>
+        <input type="radio" id="rice" name="model" value="rice">
+        <label for="rice">Model 1: Prediksi Penyakit Padi</label><br>
+        <input type="radio" id="corn" name="model" value="corn">
+        <label for="corn">Model 2: Prediksi Penyakit Jagung</label><br>
+        <input type="radio" id="potato" name="model" value="potato">
+        <label for="potato">Model 3: Prediksi Penyakit Kentang</label><br>
+        <button type="submit" value="predict Image">Upload yok </button>
+    </form>
+    {% if result %}
+    <h2>Hasil Prediksi: {{ result }}</h2>
+    <h3>Akurasi Setiap Kelas:</h3>
+    <ul>
+        {% for key, value in class_probs.items() %}
+        <li>{{ key }}: {{ value }}%</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+
+</html>
