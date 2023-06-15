@@ -2,11 +2,9 @@
 
 Backend link : https://get-prediction-rfi66hequa-et.a.run.app
 Endpoints :
-
-Corn
+- Corn / Maize
 https://get-prediction-rfi66hequa-et.a.run.app/index/maize
- 
-Potato
+- Potato
 https://get-prediction-rfi66hequa-et.a.run.app/index/potato
-Rice
+- Rice
 https://get-prediction-rfi66hequa-et.a.run.app/index/rice
