@@ -1,6 +1,6 @@
 # Cloud_Computing
 
-Backend link : https://get-prediction-rfi66hequa-et.a.run.app
+Backend link : https://get-prediction-rfi66hequa-et.a.run.app  
 Endpoints :
 - Corn / Maize
 https://get-prediction-rfi66hequa-et.a.run.app/index/maize
